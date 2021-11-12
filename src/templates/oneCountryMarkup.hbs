@@ -1,0 +1,18 @@
+{{#each this}}
+<img src="{{flags.svg}}" class="avatar" alt="flag" width="30" />
+<span class='title'>{{name.official}}</span>
+<ul class='text'>
+<li>Capital: <span class='text__normal'>{{capital}}</span></li>
+<li>Population: <span class='text__normal'>{{population}}</span></li>
+<li>Languages: <span class='text__normal'>
+    {{#each languages}}
+    {{#if @last}}
+    {{this}}
+    {{else}}
+    {{this}},
+    {{/if}}
+    {{/each}}
+</span>
+</li>
+</ul>
+{{/each}}
