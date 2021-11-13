@@ -1,9 +1,9 @@
-import '../css/styles.css';
+import './css/styles.css';
 import debounce from 'lodash.debounce';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { fetchCountries } from './fetchCountries';
-import countriesMarkupTml from '../templates/countriesMarkup.hbs';
-import oneCountriesMarkupTml from '../templates/oneCountryMarkup.hbs';
+import { fetchCountries } from './services/fetchCountries';
+import countriesMarkupTml from './templates/countriesMarkup.hbs';
+import oneCountriesMarkupTml from './templates/oneCountryMarkup.hbs';
 
 const DEBOUNCE_DELAY = 300;
 
